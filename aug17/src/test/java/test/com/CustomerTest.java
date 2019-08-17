@@ -40,12 +40,21 @@ public class CustomerTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
     @Test
     public void testName() {
         cust.setName("tom");
         assertEquals("tom", cust.getName());
+    }
+    
+    @Test
+    public void testId() {
+        cust.setId(1);
+        assertEquals(1, cust.getId());
+    }
+    
+    @Test
+    public void testEmail() {
+        cust.setEmail("tom@abc.com");
+        assertEquals("tom@abc.com", cust.getEmail());
     }
 }

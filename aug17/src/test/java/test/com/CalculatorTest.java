@@ -47,8 +47,9 @@ public class CalculatorTest {
         public void TestAdd() {
             assertEquals(4, cal.add(2, 2));
         }
-        
+    
+    @Test    
         public void TestSub() {
-            assertEquals(4, cal.sub(6,2));
+            assertEquals(4, cal.sub(6, 2));
         }
 }
